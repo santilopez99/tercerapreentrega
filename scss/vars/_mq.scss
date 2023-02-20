@@ -1,0 +1,28 @@
+@media screen and (min-width:400px){
+    /* estilos de header */
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 0.7rem;
+        align-items: center;
+       
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    /* estilos del menu */
+
+    header nav ul li{
+        transition: 3s;
+    }
+
+    header nav ul li:hover{
+        transform: scale(0.9);
+        transition: 3s;
+        box-shadow: 1px 1px 2px black;
+    }
+}
+

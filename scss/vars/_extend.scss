@@ -1,0 +1,62 @@
+%boton{
+    background-color: #51b0df;
+    margin-top: 1rem;
+    color: whitesmoke;
+    box-shadow: 3px 3px 10px black;
+}
+
+%estilomenu{
+        transform: scale(0.9);
+        transition: 3s;
+        box-shadow: 1px 1px 2px black;
+}
+
+%estiloimagenes123{
+    .imgi1{
+        width: 30%;
+        color: whitesmoke;
+        box-shadow: 3px 3px 10px black; 
+        transition: 0.5s;
+        object-fit: cover;  
+        border-radius: 5%;
+    }
+    .imgi1:hover{
+        transform:scale(1.2);
+    
+    }
+    
+    .imgi2{
+        width: 30%;
+        color: whitesmoke;
+        box-shadow: 3px 3px 10px black; 
+        transition: 0.5s;
+        object-fit: cover; 
+        border-radius: 5%;
+    }
+    
+    .imgi2:hover{
+        transform:scale(1.2);
+    }
+    
+    .imgi3{
+        width: 30%;
+        box-shadow: 3px 3px 10px black; 
+        transition: 0.5s;
+        object-fit: cover;
+        border-radius: 5%; 
+    
+    }
+    
+    .imgi3:hover{
+        transform:scale(1.2);
+    }
+}
+
+%estilocontent{
+    .content {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+     }
+}

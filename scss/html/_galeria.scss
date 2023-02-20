@@ -1,0 +1,61 @@
+@import"../vars/variables";
+@import"../vars/extend";
+@import"../vars/mixin";
+@import"../vars/mq";
+
+/* galeria*/ 
+
+.textogaleria h2{
+    @include textogaleria;
+}
+
+.contenedorgaleria{
+    @include contenedorgaleria;
+}
+
+.textogaleria{
+    text-align: center;
+}
+
+.imgg1{
+    width: 30%;
+    color: whitesmoke;
+    box-shadow: 3px 3px 10px black; 
+    transition: 0.5s;
+    object-fit: cover;  
+    border-radius: 5%;
+}
+.imgg1:hover{
+    transform:scale(1.2);
+
+}
+
+.imgg2{
+    width: 30%;
+    color: whitesmoke;
+    box-shadow: 3px 3px 10px black; 
+    transition: 0.5s;
+    object-fit: cover; 
+    border-radius: 5%;
+}
+
+.imgg2:hover{
+    transform:scale(1.2);
+}
+
+.imgg3{
+    width: 30%;
+    box-shadow: 3px 3px 10px black; 
+    transition: 0.5s;
+    object-fit: cover;
+    border-radius: 5%; 
+
+}
+
+.imgg3:hover{
+    transform:scale(1.2);
+}
+footer h3{
+    text-align: center;
+   
+}

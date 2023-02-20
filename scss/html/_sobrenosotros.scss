@@ -1,0 +1,22 @@
+
+@import"../vars/variables";
+@import"../vars/extend";
+@import"../vars/mixin";
+@import"../vars/mq";
+
+/* sobre nosotros*/ 
+.textosobrenos h2{
+    @include textosobrenosh2;
+}
+
+.textosobrenos h2:hover{
+    transform: scale(1.2s);
+}
+
+.parrafonos{
+    @include parrafonos;
+}
+footer h3{
+    text-align: center;
+   
+}

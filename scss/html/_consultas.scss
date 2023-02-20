@@ -1,0 +1,91 @@
+
+@import"../vars/variables";
+@import"../vars/extend";
+@import"../vars/mixin";
+@import"../vars/mq";
+
+/*consultas*/ 
+
+.content{
+    @extend %estilocontent;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+    span{
+        color: red;
+    }
+ }
+.contact-wrapper{
+    box-shadow: $color-contactwrapper;
+
+}
+.contact-wapper > * {
+    padding: 1em;
+ }
+ .contact-form {
+    display: grid;
+    grid-template-columns: 1 fr 1 fr;
+}
+
+.contact-form form .block{
+    grid-column: 1/3 ;
+}
+ .contact-form form p {
+    margin: 0;
+    padding: 1em;
+ }
+ 
+ .contact-form form button,
+ .contact-form form input,
+ .contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid #d63031;
+ }
+
+ .contact-form form button{
+    background: coral;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+ }
+ 
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info li  {
+    text-align: center;
+    margin: 0 0 1rem 0 ;
+
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 1em;
+}
+
+.contact-info .ul .li{
+    padding: .5em;
+}
+
+.contact-wrapper{
+    display: block;
+    grid-template-columns:1fr 1fr ;
+}
+
+h5{
+    text-align: center;
+}
+  

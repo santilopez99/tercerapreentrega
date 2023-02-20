@@ -1,0 +1,108 @@
+@import"../vars/variables";
+@import"../vars/extend";
+@import"../vars/mixin";
+@import"../vars/mq";
+
+/* estilos generales*/ 
+body{
+    background:$color-principal;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* estilos del header*/ 
+ header{
+    display: none;
+ }
+
+ /*estilos del main*/ 
+ main{
+    @include inicio;
+
+    .boton{
+        @extend %boton;
+    }  
+    img{
+        @include medidaimginicio (60%)
+    }
+ }
+/* estilos de section*/
+section{
+    display: none;
+}
+/* estilos de footer */
+
+footer h3{
+    text-align: center;
+}
+/* pantallas de tablet */
+@import"../vars/mq";
+header {
+    nav {
+        ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    li{
+        font-weight: bold;
+    }
+}
+    }
+}
+/* estilos de section*/
+section{
+    @include section;
+
+    div{
+        @include sectiondiv;
+    }
+    div {
+        
+            img{
+                @include medidasectionimg (20%);
+                  
+                }
+            }
+        ;
+    }
+  
+    /* estilos de pantallas de escritorio */
+   @import "../vars/mq";
+    
+/* estilos de main*/
+main{
+    @include estilosmain;
+    h2{
+        grid-area:h2;
+    }
+    img {
+        grid-area: img;
+    }
+    img:hover{
+        filter: $color-imgmain;
+    }
+    p{
+        grid-area: p;
+    }
+    p-dos{
+        grid-area: p-dos;
+        width: 70%;
+    }
+    .boton{
+        grid-area: boton;
+    }
+    .boton:hover{
+        box-shadow: 2px 2px 3px black;
+    }
+}
+.textoinicio h2{
+    @include textoinicioh2;
+}
+.contenedorinicio{
+    @include contenedorinicio;
+    @extend %estiloimagenes123;
+}
+/* estilos de footer */
+
+footer{
+    margin-top: 1.5rem;
+}
